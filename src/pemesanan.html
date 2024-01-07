@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Produk</title>
+    <link href="../dist/style.css" rel="stylesheet" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+      defer
+    ></script>
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="bg-white border-gray-200">
+      <div
+        class="max-w-screen-xl flex md:flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <div
+          class="flex items-center justify-between space-x-3 rtl:space-x-reverse md:flex-row-reverse"
+        >
+          <a href="#" class="flex justify-start items-start gap-2 ps-2">
+            <img src="../dist/img/icon/hamburger-box.svg" alt="" />
+            <span class="text-sm text-gray-600 hidden md:block">MENU</span>
+          </a>
+          <a
+            href="#"
+            class="flex items-center space-x-3 rtl:space-x-reverse me-4 md:border-e-2 pe-2"
+          >
+            <img class="md:w-full h-8 w-40 my-2" src="../dist/img/logo.png" />
+          </a>
+        </div>
+
+        <div class="w-full md:w-1/2 md:flex flex-col" id="navbar-default">
+          <div
+            class="font-medium hidden md:flex justify-start gap-6 p-4 md:p-0 my-4 rounded-lg rtl:space-x-reverse items-center"
+          >
+            <div>
+              <p class="text-sm">
+                Pusat Panggilan <span class="font-bold">021–569 49 669</span>
+              </p>
+            </div>
+
+            <div class="flex items-center gap-2">
+              <a class="flex-grow">
+                <p class="text-sm bg-gray-200">IN</p>
+              </a>
+
+              <a class="flex-grow">
+                <a href="#"
+                  ><i class="fa-solid fa-bell fa-xl text-gray-600"></i
+                ></a>
+              </a>
+            </div>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center gap-1 justify-start">
+              <form class="md:me-5 me-2 w-full">
+                <label
+                  for="default-search"
+                  class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                  >Search</label
+                >
+                <div class="relative flex items-center">
+                  <div
+                    class="absolute inset-y-0 md:end-2 end-6 flex items-center ps-3 pointer-events-none"
+                  >
+                    <svg
+                      class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                      aria-hidden="true"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 20 20"
+                    >
+                      <path
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    type="search"
+                    id="default-search"
+                    class="block w-full py-2 ps-2 pe-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 0"
+                    placeholder="Cari Produk..."
+                    required
+                  />
+                </div>
+              </form>
+              <a href="#" class="md:ml-2">
+                <i
+                  class="fa-solid fa-cart-shopping md:fa-2xl fa-xl text-gray-600"
+                ></i>
+              </a>
+            </div>
+
+            <div class="md:flex items-center gap-2">
+              <!-- Icon Menu 2 -->
+              <div class="hidden md:block">
+                <a
+                  href="#"
+                  class="flex items-center border border-gray-600 rounded-md py-1 px-2"
+                >
+                  <i class="fa-solid fa-gift fa-xl text-gray-600"></i>
+                </a>
+              </div>
+              <!-- Icon Menu 3 -->
+              <div class="hidden md:block">
+                <a
+                  href="#"
+                  class="flex items-center border border-gray-600 rounded-md py-1 px-2"
+                >
+                  <i class="fa-solid fa-warehouse fa-xl text-gray-600"></i>
+                </a>
+              </div>
+              <div class="flex items-center">
+                <a
+                  href="#"
+                  class="flex items-center border border-gray-600 rounded-md py-1 px-2"
+                >
+                  <i class="fa-regular fa-user fa-xl text-gray-600"></i></a
+                ><span class="hidden md:block ms-2">Username</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid bg-slate-300 pt-5">
+      <div class="container mx-auto">
+        <div class="flex flex-col md:flex-row justify-center gap-5">
+          <div class="md:w-8/12 w-11/12 pt-9 mx-auto">
+            <div
+              class="w-full text-sm p-4 font-medium text-gray-900 bg-white border border-gray-200 rounded-lg mb-4"
+            >
+              <h2 class="text-xl font-bold mb-4">Data Pemesanan</h2>
+              <h2 class="text-xl font-semibold mb-2">Username</h2>
+              <div class="text-gray-600 text-sm font-medium border-b-2 py-4">
+                <p>example@mail.com</p>
+                <p>081234567890</p>
+              </div>
+            </div>
+            <div
+              class="w-full text-sm p-4 font-medium text-gray-900 bg-white border border-gray-200 rounded-lg mb-4"
+            >
+              <h2 class="text-xl font-bold mb-4">Produk Mobil Yang dibeli</h2>
+              <h2 class="text-xl font-semibold mb-4">Kendaraan anda</h2>
+              <div class="flex flex-row gap-2 items-center">
+                <div
+                  class="md:w-1/3 w-full flex justify-center items-center flex-col mb-4"
+                >
+                  <img
+                    src="../dist/img/BMW.png"
+                    alt=""
+                    class="w-36 h-36 rounded-full object-cover mb-4"
+                  />
+                  <button class="button-primary">Ubah Kendaraan</button>
+                </div>
+                <div class="md:w-2/3 w-full">
+                  <form action="" class="w-full">
+                    <label
+                      for="plat"
+                      class="block mb-2 text-sm font-medium text-gray-900"
+                    >
+                      430i
+                    </label>
+                    <input
+                      type="text"
+                      name="plat"
+                      id="plat"
+                      class="border-b-2 w-full"
+                      value="B2222r"
+                    />
+                  </form>
+                </div>
+              </div>
+              <div
+                class="md:w-1/2 w-full mx-auto flex flex-row gap-2 items-center"
+              >
+                <div
+                  class="md:w-1/3 w-full flex justify-center items-center flex-col"
+                >
+                  <img
+                    src="../dist/img/oli.jpg"
+                    alt=""
+                    class="w-32 h-32 object-cover mb-4"
+                  />
+
+                  <!-- Modal toggle -->
+                  <button
+                    data-modal-target="crud-modal"
+                    data-modal-toggle="crud-modal"
+                    class="button-primary"
+                    type="button"
+                  >
+                    Atur Jadwal
+                  </button>
+
+                  <!-- Main modal -->
+                  <div
+                    id="crud-modal"
+                    tabindex="-1"
+                    aria-hidden="true"
+                    class="hidden fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50 z-50"
+                  >
+                    <div class="relative p-4 w-full max-w-md max-h-full">
+                      <!-- Modal content -->
+                      <div class="relative bg-white rounded-lg shadow">
+                        <!-- Modal header -->
+                        <div
+                          class="flex items-center justify-between px-4 pt-4 md:px-5 md:pt-5 rounded-t"
+                        >
+                          <h3 class="text-lg font-semibold text-gray-900">
+                            Pilih Lokasi Anda
+                          </h3>
+                          <button
+                            type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center"
+                            data-modal-toggle="crud-modal"
+                          >
+                            <svg
+                              class="w-3 h-3"
+                              aria-hidden="true"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 14 14"
+                            >
+                              <path
+                                stroke="currentColor"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+                              />
+                            </svg>
+                            <span class="sr-only">Close modal</span>
+                          </button>
+                        </div>
+                        <!-- Modal body -->
+                        <form class="px-4 md:px-5 pb-4">
+                          <div class="grid gap-4 mb-4 grid-cols-2">
+                            <div class="col-span-2">
+                              <input
+                                type="text"
+                                name="lokasi"
+                                id="lokasi"
+                                class="bg-gray-50 border-b border-gray-300 text-gray-900 text-sm block w-full p-2.5"
+                                placeholder="Masukan Lokasi anda"
+                                required=""
+                              />
+                            </div>
+                          </div>
+                          <h3 class="text-lg font-semibold text-gray-900">
+                            Data Pengunjung
+                          </h3>
+                          <div class="grid gap-4 mb-4 grid-cols-2">
+                            <div class="col-span-2">
+                              <label
+                                for="name"
+                                class="block mb-2 text-sm font-medium text-gray-600"
+                                >Nama</label
+                              >
+                              <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="bg-gray-50 border rounded-lg border-gray-300 text-gray-900 text-sm block w-full p-2.5"
+                                placeholder="Masukan Nama anda"
+                                required=""
+                              />
+                            </div>
+                          </div>
+                          <label
+                            for="pengunjung"
+                            class="block mb-2 text-sm font-medium text-gray-600"
+                            >Pengunjung</label
+                          >
+                          <div class="flex flex-row gap-6 my-4 border-b py-4">
+                            <input
+                              type="radio"
+                              name="pengunjung"
+                              id="pengunjung"
+                            />Pergi Sendiri
+                            <input
+                              type="radio"
+                              name="pengunjung"
+                              id="pengunjung"
+                            />Diwakilkan
+                          </div>
+                          <div class="py-4">
+                            <label
+                              for="datetime"
+                              class="block mb-2 text-sm font-medium text-gray-600"
+                              >Waktu Melakukan Pemasangan:</label
+                            >
+                            <input
+                              type="datetime-local"
+                              name="datetime"
+                              id="datetime"
+                              class="bg-gray-50 border rounded-lg border-gray-300 text-gray-900 text-sm block w-full p-2.5"
+                              required=""
+                            />
+                          </div>
+
+                          <button type="submit" class="button-primary mb-4">
+                            Pesan Sekarang
+                          </button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="md:w-2/3 w-full">
+                  <h2 class="text-sm font-semibold mb-4">Oli Mobil</h2>
+                  <p class="text-gray-600 text-sm mb-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consectetur, aperiam.
+                  </p>
+                  <h2 class="text-sm font-semibold mb-2">Rp. 100.000</h2>
+                  <h3 class="text-sm font-semibold mb-2">
+                    Jumlah: <span>1</span>
+                  </h3>
+                  <h3 class="text-sm font-semibold mb-2">
+                    Sub Total: Rp. <span>100.000</span>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-3/12 w-11/12 mx-auto pt-9">
+            <div
+              class="w-full text-sm py-4 font-medium text-gray-900 bg-white border border-gray-200 rounded-lg mb-4"
+            >
+              <p
+                class="w-full px-4 py-2 rounded-t-lg bg-white font-semibold text-blue-500"
+              >
+                Ringkasan Belanja
+              </p>
+              <div class="px-4 py-2 flex justify-between">
+                <p>Total Harga</p>
+                <p>Rp. 100.000</p>
+              </div>
+              <div class="px-4 py-2 flex justify-between">
+                <p>Pajak</p>
+                <p>Rp. 0</p>
+              </div>
+              <div class="px-4 py-2 flex justify-between border-b-2">
+                <p>Diskon</p>
+                <p>Rp. 0</p>
+              </div>
+              <div class="px-4 py-2 flex justify-between">
+                <p>Grand Total</p>
+                <p>Rp. 2.000.000</p>
+              </div>
+              <div class="px-4 py-2">
+                <button class="button-secondary w-full mb-4">
+                  Gunakan Kode Promo atau Kupon
+                </button>
+                <button class="button-primary w-full">Pembayaran</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-gray-300 p-4 flex justify-center md:justify-start py-4">
+      <img src="../dist/img/logo.png" alt="" />
+    </footer>
+    <!-- Bottom Bar -->
+    <div
+      x-data="{ isMobile: window.innerWidth <= 768 }"
+      x-init="() => { window.addEventListener('resize', () => { isMobile = window.innerWidth <= 768 }) }"
+      class="fixed bottom-0 left-0 right-0 bg-white px-4 py-6 text-blue-500 shadow-md flex items-center justify-between md:hidden"
+      x-show="isMobile"
+    >
+      <!-- Icon Menu 1 -->
+      <a href="#" class="flex items-center justify-center mx-2">
+        <i class="fa-solid fa-home fa-lg"></i>
+      </a>
+      <!-- Icon Menu 2 -->
+      <a href="#" class="flex items-center justify-center mx-2">
+        <i class="fa-solid fa-gift fa-lg"></i>
+      </a>
+      <!-- Icon Menu 3 -->
+      <a href="#" class="flex items-center justify-center mx-2">
+        <i class="fa-solid fa-warehouse fa-lg"></i>
+      </a>
+      <!-- Icon Menu 4 -->
+      <a href="#" class="flex items-center justify-center mx-2">
+        <i class="fa-solid fa-bell fa-lg"></i>
+      </a>
+      <!-- Icon Menu 5 -->
+      <a href="#" class="flex items-center justify-center mx-2">
+        <i class="fa-solid fa-clock-rotate-left fa-lg"></i>
+      </a>
+    </div>
+  </body>
+
+  <script>
+    document.querySelectorAll("[data-modal-toggle]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const modalId = button.getAttribute("data-modal-toggle");
+        const modal = document.getElementById(modalId);
+        modal.classList.toggle("hidden");
+      });
+    });
+  </script>
+
+  <!-- <script src="../dist/js/script.js"></script> -->
+  <!-- <script
+    src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+    defer
+  ></script> -->
+  <script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+</html>

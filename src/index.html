@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link href="../dist/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/all.css"
+    />
+  </head>
+  <body>
+    <!-- nav -->
+    <nav class="bg-white border-gray-200">
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+      >
+        <a
+          href="https://flowbite.com/"
+          class="flex items-center space-x-3 rtl:space-x-reverse"
+        >
+          <img class="w-full h-8" src="../dist/img/logo.png" />
+        </a>
+        <button
+          data-collapse-toggle="navbar-default"
+          type="button"
+          id="toggleButton"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+          aria-controls="navbar-default"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white items-center"
+          >
+            <li class="flex-grow">
+              <a href="#" class="nav-link" aria-current="page"
+                >Product & Services</a
+              >
+            </li>
+            <li class="flex-grow">
+              <a href="#" class="nav-link">FAQ</a>
+            </li>
+            <li class="flex-grow">
+              <a href="#" class="nav-link">Kontak Kami</a>
+            </li>
+            <li class="flex-grow">
+              <a href="#" class="nav-link"
+                ><i class="fa-solid fa-cart-shopping"></i
+              ></a>
+            </li>
+            <li class="flex-grow">
+              <a href="#" class="nav-link"><i class="fa-solid fa-user"></i></a>
+            </li>
+            <li class="flex-grow">
+              <button type="button" class="nav-button">Daftar / Masuk</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <div class="container-fluid md:mx-auto mb-24 mt-6">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <div
+          class="w-full text-center md:text-start md:w-1/2 px-4 my-8 md:my-0"
+        >
+          <h1 class="text-3xl md:text-5xl font-bold">
+            Drive Business Growth &
+          </h1>
+          <h1 class="text-3xl md:text-5xl font-bold">On Demand Experiences</h1>
+          <p class="mt-6">
+            Dignissim a, velit odio sed convallis facilisi vulputate.
+            Consectetur ultricies metus porttitor id urna, sapien mauris sed.
+            Quis placerat ac urna, massa lectus. Consequat eu eu quam id sit
+            consequat condimentum.
+          </p>
+          <div class="flex gap-6 mt-6 justify-evenly">
+            <button type="button" class="hero-button">
+              <span class="px-1"
+                ><i class="fa-solid fa-circle fa-2xl" style="color: #e4e1e1"></i
+              ></span>
+              <span>Home Services</span>
+            </button>
+            <button type="button" class="hero-button">
+              <span class="px-1"
+                ><i class="fa-solid fa-circle fa-2xl" style="color: #e4e1e1"></i
+              ></span>
+              <span>Layanan Darurat</span>
+            </button>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 mt-4 md:mt-0 px-4 md:px-0">
+          <img
+            class="w-full h-1/2 rounded-2xl md:rounded-none"
+            src="../dist/img/hero.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- feature -->
+    <div class="container-fluid md:mx-auto mb-24">
+      <div class="container mx-auto w-10/12 text-center">
+        <h2 class="text-3xl md:hidden font-bold mt-6">
+          Drive Business Growth & On Demand Experiences
+        </h2>
+        <h2 class="text-2xl md:text-3xl font-bold mt-6">
+          Bibendum amet at molestie mattis.
+        </h2>
+        <p class="mt-6">
+          Rhoncus morbi et augue nec, in id ullamcorper at sit. Condimentum sit
+          nunc in eros scelerisque sed. Commodo in viverra nunc, ullamcorper ut.
+          Non, amet, aliquet scelerisque nullam sagittis, pulvinar. Fermentum
+          scelerisque sit consectetur hac mi. Mollis leo eleifend ultricies
+          purus iaculis.
+        </p>
+        <div class="mt-6 flex gap-4 justify-between flex-col md:flex-row">
+          <div class="md:w-1/4 border border-gray-700 md:border-0 p-2">
+            <img src="../dist/img/feature.png" class="md:mx-auto" alt="" />
+          </div>
+          <div class="md:w-1/4 border border-gray-700 md:border-0 p-2">
+            <img src="../dist/img/feature.png" class="md:mx-auto" alt="" />
+          </div>
+          <div class="md:w-1/4 border border-gray-700 md:border-0 p-2">
+            <img src="../dist/img/feature.png" class="md:mx-auto" alt="" />
+          </div>
+          <div class="md:w-1/4 border border-gray-700 md:border-0 p-2">
+            <img src="../dist/img/feature.png" class="md:mx-auto" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- testimonials -->
+    <div class="container-fluid md:mx-auto mb-24">
+      <div class="container mx-auto w-10/12 text-center">
+        <p class="mt-6 font-bold">TESTIMONIALS</p>
+        <h2 class="text-3xl font-bold mt-6">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum amet
+          at molestie mattis.
+        </h2>
+        <div
+          class="hidden mt-6 md:flex gap-4 justify-around flex-auto flex-wrap"
+        >
+          <img src="../dist/img/feature.png" class="md:w-1/3 h-32" alt="" />
+          <img src="../dist/img/feature.png" class="md:w-1/3 h-32" alt="" />
+        </div>
+        <div
+          x-data="{ activeSlide: 0, images: ['../dist/img/feature.png', '../dist/img/logo.png'] }"
+          class="mt-6 md:hidden"
+        >
+          <!-- Carousel wrapper -->
+          <div class="relative">
+            <!-- Slides -->
+            <template x-for="(image, index) in images" :key="index">
+              <img
+                x-show="activeSlide === index"
+                :src="image"
+                class="w-full h-full object-cover"
+                alt="Slide Image"
+              />
+            </template>
+
+            <!-- Controls -->
+            <button
+              @click="activeSlide = (activeSlide - 1 + images.length) % images.length"
+              class="absolute top-1/2 left-1 transform -translate-y-1/2 text-slate-800 px-4 py-2 rounded-full"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button
+              @click="activeSlide = (activeSlide + 1) % images.length"
+              class="absolute top-1/2 right-1 transform -translate-y-1/2 text-slate-800 px-4 py-2 rounded-full"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- brand -->
+    <div class="container-fluid md:mx-auto mb-24">
+      <div class="grid md:grid-cols-2 grid-cols-1">
+        <div>
+          <div class="grid mt-8 px-20 text-center">
+            <p class="mt-6 font-bold text-blue-700">CAPTION</p>
+            <h2 class="text-3xl font-bold mt-6">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </h2>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-8 px-6">
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+          </div>
+        </div>
+
+        <!-- ... -->
+        <div>
+          <div class="grid mt-8 px-20 text-center">
+            <p class="mt-6">Parts yang kami gunakan</p>
+            <h2 class="text-3xl font-bold mt-6">
+              Bibendum amet at molestie mattis.
+            </h2>
+          </div>
+
+          <div class="flex justify-center items-center gap-1 my-6">
+            <hr class="w-1/3 border-t-2 border-black" />
+            <p class="text-xl">OLI</p>
+            <hr class="w-1/3 border-t-2 border-black" />
+          </div>
+
+          <div class="grid grid-cols-3 gap-4 mt-8 px-6">
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+          </div>
+
+          <div class="flex justify-center items-center gap-1 my-6">
+            <hr class="w-1/3 border-t-2 border-black" />
+            <p class="text-xl">PARTS</p>
+            <hr class="w-1/3 border-t-2 border-black" />
+          </div>
+          <div class="grid grid-cols-3 gap-2 mt-8 px-6">
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+            <img src="../dist/img/feature.png" class="mx-auto" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- cta -->
+    <div class="container-fluid md:mx-auto my-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 py-6">
+        <div class="px-6">
+          <h2 class="text-3xl font-bold mt-6">
+            Bibendum amet at molestie mattis.
+          </h2>
+          <p class="mt-6">
+            Rhoncus morbi et augue nec, in id ullamcorper at sit.
+          </p>
+        </div>
+        <div class="flex gap-6 mt-6 justify-evenly h-2/3 md:h-1/2">
+          <button type="button" class="hero-button">
+            <span class="px-1"
+              ><i class="fa-regular fa-circle fa-2xl" style="color: #303030"></i
+            ></span>
+            <span>Home Services</span>
+          </button>
+          <button type="button" class="hero-button">
+            <span class="px-1"
+              ><i class="fa-regular fa-circle fa-2xl" style="color: #303030"></i
+            ></span>
+            <span>Layanan Darurat</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-gray-300 p-4 flex justify-center md:justify-start py-4">
+      <img src="../dist/img/logo.png" alt="" />
+    </footer>
+  </body>
+  <script src="../dist/js/script.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js"
+    defer
+  ></script>
+  <script src="../node_modules/@fortawesome/fontawesome-free/js/all.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.js"></script>
+</html>

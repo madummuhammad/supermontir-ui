@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/style.css" rel="stylesheet" />
+    <title>Garasi</title>
+  </head>
+  <body>
+    <div class="flex flex-row justify-between items-center border-b-2 pb-2">
+      <h1 class="md:text-2xl text-lg font-semibold mb-4">
+        Daftar Kendaraan Garasi
+      </h1>
+      <button class="button-primary flex flex-row">
+        <i class="fa-solid fa-plus fa-lg"></i>
+        <span class="hidden md:block">Tambah Kendaraan</span>
+      </button>
+    </div>
+
+    <!-- table -->
+    <div class="overflow-x-auto">
+      <div class="w-full">
+        <table class="w-full mt-2">
+          <tbody class="w-full">
+            <tr>
+              <td class="items-end w-40" rowspan="3">
+                <img src="../dist/img/BMW.png" class="w-32" alt="" />
+              </td>
+              <td class="text-left">430i</td>
+              <td class="text-right">
+                <a href="#"
+                  ><i class="fa-regular fa-star text-orange-500 md:ml-2"></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="fa-regular fa-pen-to-square text-orange-500 md:ml-2"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i class="fa-solid fa-trash-can text-orange-500 md:ml-2"></i
+                ></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-left">B2222r</td>
+            </tr>
+            <tr>
+              <td class="text-left">
+                <a href="#" class="text-blue-500 font-semibold">Detail</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/style.css" rel="stylesheet" />
+    <title>Produk</title>
+  </head>
+  <body>
+    <div class="text-left border-b-2 pb-2 mb-6">
+      <h1 class="md:text-xl text-lg font-semibold">Profile Saya</h1>
+      <p class="text-gray-500">
+        Kelola informasi profile and untuk mengontrol, melindungi dan
+        mengamankan akun.
+      </p>
+    </div>
+
+    <!-- table -->
+    <div class="overflow-x-auto w-full">
+      <div class="w-full flex md:flex-row flex-col">
+        <form
+          action=""
+          class="md:w-2/3 w-full px-4 text-left md:border-e-2 mb-4"
+        >
+          <div class="flex flex-row mb-2">
+            <label for="name" class="text-gray-500 w-1/3">Nama</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="border-2 border-gray-300 w-2/3 rounded-md p-2"
+            />
+          </div>
+          <div class="flex flex-row mb-2">
+            <label for="email" class="text-gray-500 w-1/3">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="border-2 border-gray-300 w-2/3 rounded-md p-2"
+            />
+          </div>
+          <div class="flex flex-row mb-2">
+            <label for="telp" class="text-gray-500 w-1/3">No. Telepon</label>
+            <input
+              type="text"
+              name="telp"
+              id="telp"
+              class="border-2 border-gray-300 w-2/3 rounded-md p-2"
+            />
+          </div>
+          <!-- jenis kelamin -->
+          <div class="flex flex-row mb-2">
+            <label for="gender" class="text-gray-500 w-1/3"
+              >Jenis Kelamin</label
+            >
+            <select
+              name="gender"
+              id="gender"
+              class="border-2 border-gray-300 w-2/3 rounded-md p-2"
+            >
+              <option value="male">Laki-laki</option>
+              <option value="female">Perempuan</option>
+            </select>
+          </div>
+          <!-- tanggal lahir -->
+          <div class="flex flex-row mb-2">
+            <label for="birthdateDay" class="text-gray-500 w-1/3"
+              >Tgl. Lahir</label
+            >
+            <div class="flex items-center w-2/3 space-x-2">
+              <!-- Day input -->
+              <input
+                type="number"
+                name="birthdateDay"
+                id="birthdateDay"
+                class="border-2 border-gray-300 w-1/3 rounded-md p-2"
+                value="1"
+                min="1"
+                max="31"
+              />
+
+              <!-- Month input -->
+              <select
+                name="birthdateMonth"
+                id="birthdateMonth"
+                class="border-2 border-gray-300 w-1/3 rounded-md p-2"
+              >
+                <option value="1">Januari</option>
+                <option value="2">Februari</option>
+                <option value="3">Maret</option>
+                <!-- Add options for the remaining months -->
+              </select>
+
+              <!-- Year input -->
+              <input
+                type="number"
+                name="birthdateYear"
+                id="birthdateYear"
+                class="border-2 border-gray-300 w-1/3 rounded-md p-2"
+                value="1940"
+                min="1900"
+                max="2100"
+              />
+            </div>
+          </div>
+
+          <div class="flex justify-end gap-2">
+            <button type="submit" class="button-primary">Simpan</button>
+            <button type="submit" class="button-secondary">
+              Ubah Kata Sandi
+            </button>
+          </div>
+        </form>
+        <!-- avatar image upload -->
+        <div class="md:w-1/3 w-ful flex justify-center items-center flex-col">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+            alt=""
+            class="w-36 h-36 rounded-full object-cover mb-4"
+          />
+          <button class="button-primary">Pilih Gambar</button>
+          <p class="text-sm text-gray-500 mt-2">Ukuran gambar: maks 1 MB</p>
+          <p class="text-sm text-gray-500">Format gambar: jpeg, png</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

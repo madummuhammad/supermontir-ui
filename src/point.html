@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk</title>
+  </head>
+  <body>
+    <!-- table -->
+    <div class="flex flex-row justify-between items-center border-b-2 pb-2">
+      <h1 class="md:text-5xl text-2xl font-semibold mb-4 text-orange-500">
+        200
+      </h1>
+      <div class="flex flex-col items-start">
+        <h3 class="text-lg font-semibold text-orange-500">Point Tersedia</h3>
+        <p class="text-sm font-thin">2023-12-31</p>
+      </div>
+    </div>
+
+    <div class="overflow-x-auto">
+      <div class="w-full">
+        <!-- navbar -->
+        <div
+          class="flex flex-row justify-around gap-8 items-center border-b-2 pb-2"
+        >
+          <div class="flex items-center justify-center">
+            <a
+              href="javascript:void(0)"
+              class="tab-link active-tab"
+              onclick="showContent('tukar', this)"
+              aria-current="page"
+              >Penukaran Point</a
+            >
+          </div>
+          <div class="flex items-center justify-center">
+            <a
+              href="javascript:void(0)"
+              class="tab-link"
+              onclick="showContent('riwayat', this)"
+              aria-current="page"
+              >Riwayat</a
+            >
+          </div>
+        </div>
+
+        <!-- content -->
+        <div class="w-full" id="tab-content-tukar">Isi untuk Penukaran</div>
+        <div class="w-full hidden" id="tab-content-riwayat">
+          Isi untuk Riwayat
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produk</title>
+  </head>
+  <body>
+    <!-- table -->
+    <div class="overflow-x-auto">
+      <div class="w-full">
+        <!-- navbar -->
+        <div class="flex flex-row justify-between items-center border-b-2 pb-2">
+          <a
+            href="javascript:void(0)"
+            class="tab-link active-tab"
+            onclick="showContent('baru', this)"
+            aria-current="page"
+            >Baru</a
+          >
+
+          <a
+            href="javascript:void(0)"
+            class="tab-link"
+            onclick="showContent('belum-dijadwalkan', this)"
+            aria-current="page"
+            >Belum Dijadwalkan</a
+          >
+
+          <a
+            href="javascript:void(0)"
+            class="tab-link"
+            onclick="showContent('menunggu-alokasi' , this)"
+            aria-current="page"
+            >Menunggu Alokasi Bengkel</a
+          >
+
+          <a
+            href="javascript:void(0)"
+            class="tab-link"
+            onclick="showContent('dalam-pengerjaan', this)"
+            aria-current="page"
+            >Dalam Pengerjaan</a
+          >
+
+          <a
+            href="javascript:void(0)"
+            class="tab-link"
+            onclick="showContent('selesai', this)"
+            aria-current="page"
+            >Selesai</a
+          >
+        </div>
+
+        <!-- content -->
+        <div class="w-full" id="tab-content-baru">Isi untuk Baru</div>
+        <div class="w-full hidden" id="tab-content-belum-dijadwalkan">
+          Isi untuk Belum Dijadwalkan
+        </div>
+        <div class="w-full hidden" id="tab-content-menunggu-alokasi">
+          Isi untuk Menunggu Alokasi
+        </div>
+        <div class="w-full hidden" id="tab-content-dalam-pengerjaan">
+          Isi untuk Dalam Pengerjaan
+        </div>
+        <div class="w-full hidden" id="tab-content-selesai">
+          Isi untuk Selesai
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
